@@ -27,7 +27,22 @@ public class ProblemSet2 {
          * Prompt the user to enter the following information (in order): first name, last
          * name, grade, age, and hometown.
          */
-
+         System.out.print("\nEnter you first name: ");
+         String firstName = in.nextLine();
+         // in.nextLine();
+         System.out.print("Enter you last name: ");
+         String lastName = in.nextLine();
+         System.out.print("Enter you grade: ");
+         byte grade = in.nextByte();
+         System.out.print("Enter you age: ");
+         byte age = in.nextByte();
+         in.nextLine();
+         System.out.print("Enter you hometown: ");
+         String hometown = in.nextLine();
+         System.out.println("\nName\t: " + firstName + " " + lastName);
+         System.out.println("Grade\t: " + grade);
+         System.out.println("Age\t: " + age);
+         System.out.println("Hometown: " + hometown);
 
 
         /*
