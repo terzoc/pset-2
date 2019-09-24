@@ -27,23 +27,23 @@ public class ProblemSet2 {
          * Prompt the user to enter the following information (in order): first name, last
          * name, grade, age, and hometown.
          */
-         System.out.print("\nEnter you first name: ");
-         String firstName = in.nextLine();
+         // System.out.print("\nEnter you first name: ");
+         // String firstName = in.nextLine();
+         // // in.nextLine();
+         // System.out.print("Enter you last name: ");
+         // String lastName = in.nextLine();
+         // System.out.print("Enter you grade: ");
+         // byte grade = in.nextByte();
+         // System.out.print("Enter you age: ");
+         // byte age = in.nextByte();
          // in.nextLine();
-         System.out.print("Enter you last name: ");
-         String lastName = in.nextLine();
-         System.out.print("Enter you grade: ");
-         byte grade = in.nextByte();
-         System.out.print("Enter you age: ");
-         byte age = in.nextByte();
-         in.nextLine();
-         System.out.print("Enter you hometown: ");
-         String hometown = in.nextLine();
-         System.out.println("\nName\t: " + firstName + " " + lastName);
-         System.out.println("Grade\t: " + grade);
-         System.out.println("Age\t: " + age);
-         System.out.println("Hometown: " + hometown);
-
+         // System.out.print("Enter you hometown: ");
+         // String hometown = in.nextLine();
+         // System.out.println("\nName\t: " + firstName + " " + lastName);
+         // System.out.println("Grade\t: " + grade);
+         // System.out.println("Age\t: " + age);
+         // System.out.println("Hometown: " + hometown);
+         //
 
         /*
          * Exercise 2.
@@ -51,7 +51,13 @@ public class ProblemSet2 {
          * Given a dollar amount in the range [0.00, 1.00], print the number of dollar
          * bills, quarters, dimes, nickels, and pennies needed to produce this amount.
          */
-
+         double leftOver;
+         System.out.print("\nEnter dollar amount: ")
+         double dollarAmount = in.nextLine();
+         double dollars = Math.floor(dollarAmount / 1);
+         leftOver = dollarAmount % 1;
+         double quarters = leftOver / quarters;
+         
 
 
         /*
