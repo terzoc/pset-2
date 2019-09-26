@@ -27,22 +27,22 @@ public class ProblemSet2 {
          * Prompt the user to enter the following information (in order): first name, last
          * name, grade, age, and hometown.
          */
-         System.out.print("\nEnter you first name: ");
-         String firstName = in.nextLine();
+         // System.out.print("\nEnter you first name: ");
+         // String firstName = in.nextLine();
+         // // in.nextLine();
+         // System.out.print("Enter you last name: ");
+         // String lastName = in.nextLine();
+         // System.out.print("Enter you grade: ");
+         // byte grade = in.nextByte();
+         // System.out.print("Enter you age: ");
+         // byte age = in.nextByte();
          // in.nextLine();
-         System.out.print("Enter you last name: ");
-         String lastName = in.nextLine();
-         System.out.print("Enter you grade: ");
-         byte grade = in.nextByte();
-         System.out.print("Enter you age: ");
-         byte age = in.nextByte();
-         in.nextLine();
-         System.out.print("Enter you hometown: ");
-         String hometown = in.nextLine();
-         System.out.println("\nName\t: " + firstName + " " + lastName);
-         System.out.println("Grade\t: " + grade);
-         System.out.println("Age\t: " + age);
-         System.out.println("Hometown: " + hometown);
+         // System.out.print("Enter you hometown: ");
+         // String hometown = in.nextLine();
+         // System.out.println("\nNAME\t: " + firstName + " " + lastName);
+         // System.out.println("GRADE\t: " + grade);
+         // System.out.println("AGE\t: " + age);
+         // System.out.println("HOMETOWN: " + hometown);
 
         /*
          * Exercise 2.
@@ -55,24 +55,25 @@ public class ProblemSet2 {
          final double DIME_VALUE = 10;
          final double NICKEL_VALUE = 5;
          final double PENNIE_VALUE = 1;
+         double leftOver;
 
-         System.out.print("\nEnter dollar amount: ");
-         double leftOver = in.nextDouble();
-         leftOver *= 100;
-         int dollars =(int)(leftOver/DOLLAR_VALUE);
-         leftOver = leftOver % DOLLAR_VALUE;
-         int quarterAmount =(int)(leftOver/QUARTER_VALUE);
-         leftOver = leftOver % QUARTER_VALUE;
-         int dimeAmount =(int)(leftOver/DIME_VALUE);
-         leftOver = leftOver % DIME_VALUE;
-         int nickelAmount =(int)(leftOver/NICKEL_VALUE);
-         leftOver = leftOver % NICKEL_VALUE;
-         int pennieAmount =(int) (leftOver/PENNIE_VALUE);
-         System.out.println("\nDollars\t: " + dollars);
-         System.out.println("Quarters: " + quarterAmount);
-         System.out.println("Dimes\t: " + dimeAmount);
-         System.out.println("Nickels\t: " + nickelAmount);
-         System.out.println("Pennies\t: " + pennieAmount);
+         // System.out.print("\nEnter dollar amount: ");
+         // leftOver = in.nextDouble();
+         // leftOver *= 100;
+         // int dollars =(int)(leftOver/DOLLAR_VALUE);
+         // leftOver = leftOver % DOLLAR_VALUE;
+         // int quarterAmount =(int)(leftOver/QUARTER_VALUE);
+         // leftOver = leftOver % QUARTER_VALUE;
+         // int dimeAmount =(int)(leftOver/DIME_VALUE);
+         // leftOver = leftOver % DIME_VALUE;
+         // int nickelAmount =(int)(leftOver/NICKEL_VALUE);
+         // leftOver = leftOver % NICKEL_VALUE;
+         // int pennieAmount =(int) (leftOver/PENNIE_VALUE);
+         // System.out.println("\nDOLLARS\t: " + dollars);
+         // System.out.println("QUARTERS: " + quarterAmount);
+         // System.out.println("DIMES\t: " + dimeAmount);
+         // System.out.println("NICKELS\t: " + nickelAmount);
+         // System.out.println("PENNIES\t: " + pennieAmount);
 
         /*
          * Exercise 3.
@@ -80,7 +81,30 @@ public class ProblemSet2 {
          * Given a dollar amount in the range [0.00, 20.00], print the smallest number of
          * bills and coins needed to produce this amount.
          */
+         final double FIVE_BILL = 500;
+         final double TEN_BILL = 1000;
+         final double TWENTY_BILL = 2000;
 
+         System.out.print("\nEnter dollar amount: ");
+         leftOver = in.nextDouble();
+         leftOver *= 100;
+         int bills = (int)(leftOver/TWENTY_BILL);
+         leftOver %= TWENTY_BILL;
+         bills += (int)(leftOver / TEN_BILL);
+         leftOver %= TEN_BILL;
+         bills += (int)(leftOver / FIVE_BILL);
+         leftOver %= FIVE_BILL;
+         bills += (int)(leftOver / DOLLAR_VALUE);
+         leftOver %= DOLLAR_VALUE;
+         int coins =(int)(leftOver/QUARTER_VALUE);
+         leftOver %= QUARTER_VALUE;
+         coins +=(int)(leftOver/DIME_VALUE);
+         leftOver %= DIME_VALUE;
+         coins +=(int)(leftOver/NICKEL_VALUE);
+         leftOver %= NICKEL_VALUE;
+         coins +=(int) (leftOver/PENNIE_VALUE);
+         System.out.println("\nBILLS\t: " + bills);
+         System.out.println("COINS\t: " + coins);
 
 
         /*
