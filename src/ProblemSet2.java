@@ -187,12 +187,13 @@ public class ProblemSet2 {
          * Given a string, reverse and print the first and second halves of that string.
          */
          System.out.print("\nEnter a string: ");
-         String orginalString = in.nextLine();
+         String orginalString = in.next();
          int halfOfString = (int) (Math.round(orginalString.length() /2 ));
          String firstHalf = orginalString.substring(0, halfOfString);
          String secondHalf = orginalString.substring(halfOfString);
          String reverse = secondHalf + firstHalf;
          System.out.println("\n" + reverse);
+
 
         /*
          * Exercise 10.
@@ -200,14 +201,14 @@ public class ProblemSet2 {
          * Given a first, middle, and last name, print the corresponding initials.
          */
          System.out.print("\nEnter you first name: ");
-         String firstName = in.nextLine();
+         String firstName2 = in.next();
          System.out.print("Enter you middle name: ");
-         String middleName = in.nextLine();
+         String middleName = in.next();
          System.out.print("Enter you last name: ");
-         String lastName = in.nextLine();
-         String firstInital = String.valueOf(firstName.charAt(0));
+         String lastName2 = in.next();
+         String firstInital = String.valueOf(firstName2.charAt(0));
          String middleInital = String.valueOf(middleName.charAt(0));
-         String lastInital = String.valueOf(lastName.charAt(0));
+         String lastInital = String.valueOf(lastName2.charAt(0));
          String initials = firstInital + middleInital + lastInital;
          System.out.println("\n" + initials);
 
