@@ -96,7 +96,6 @@ public class ProblemSet2 {
          // System.out.println("\nBILLS\t: " + bills);
          // System.out.println("COINS\t: " + coins);
 
-
         /*
          * Exercise 4.
          *
@@ -107,7 +106,7 @@ public class ProblemSet2 {
          // final double INCH_IN_YARD = 36;
          // final double INCH_IN_FOOT = 12;
          //
-         // System.out.print("Enter a number on inches: ");
+         // System.out.print("\nEnter a number on inches: ");
          // double inchesRemaining = in.nextDouble();
          // int miles = (int) (inchesRemaining / INCH_IN_MILE);
          // inchesRemaining %= INCH_IN_MILE;
@@ -119,8 +118,6 @@ public class ProblemSet2 {
          // System.out.println("YARDS\t: " + yards);
          // System.out.println("FEET\t: " + feet);
          // System.out.println("Inches\t: " + finalInches);
-         //
-
 
         /*
          * Exercise 5.
@@ -131,7 +128,7 @@ public class ProblemSet2 {
          // final double CM_IN_KILO = 100000;
          // final double CM_IN_METER = 100;
          //
-         // System.out.print("Enter a number of centimeters: ");
+         // System.out.print("\nEnter a number of centimeters: ");
          // double cmRemaining = in.nextDouble();
          //
          // int kilometers = (int) (cmRemaining / CM_IN_KILO);
@@ -148,12 +145,12 @@ public class ProblemSet2 {
          *
          * Given a diameter, print the area and circumference of the corresponding circle.
          */
-         System.out.print("\nEnder a diameter: ");
-         double diameter = in.nextDouble();
-         double area = Math.PI * diameter * diameter * (.25) ;
-         double circumfrence = Math.PI * diameter;
-         System.out.printf("\nAREA\t\t: %.2f", area);
-         System.out.printf("\nCIRCUMFRENCE\t: %.2f", circumfrence);
+         // System.out.print("\nEnter a diameter: ");
+         // double diameter = in.nextDouble();
+         // double area = Math.PI * diameter * diameter * (.25) ;
+         // double circumfrence = Math.PI * diameter;
+         // System.out.printf("\nAREA\t\t: %.2f", area);
+         // System.out.printf("\nCIRCUMFRENCE\t: %.2f\n", circumfrence);
 
 
 
@@ -163,7 +160,16 @@ public class ProblemSet2 {
          * Given a length and width, print the area, perimeter, and diagonal of the
          * corresponding rectangle.
          */
-
+         System.out.print("\nEnter a length: ");
+         double length = in.nextDouble();
+         System.out.print("Enter a width: ");
+         double width = in.nextDouble();
+         double areaRec = length * width;
+         double perimeter = length * 2 + width * 2 ;
+         double diagonal = Math.sqrt(length*length + width * width);
+         System.out.printf("\nAREA\t\t: %.2f", areaRec);
+         System.out.printf("\nPERIMETER\t: %.2f", perimeter);
+         System.out.printf("\nDIAGONAL\t: %.2f\n", diagonal);
 
 
         /*
