@@ -128,28 +128,32 @@ public class ProblemSet2 {
          * Given a number of centimeters, print the equivalent number of kilometers,
          * meters, and centimeters.
          */
-         final double CM_IN_KILO = 100000;
-         final double CM_IN_METER = 100;
-
-         System.out.print("Enter a number of centimeters: ");
-         double cmRemaining = in.nextDouble();
-
-         int kilometers = (int) (cmRemaining / CM_IN_KILO);
-         cmRemaining %= CM_IN_KILO;
-         int meters = (int) (cmRemaining / CM_IN_METER);
-         int centimeters = (int) (cmRemaining % CM_IN_METER);
-
-         System.out.println("\nKILOMETERS\t: " + kilometers);
-         System.out.println("METERS\t\t: " + meters);
-         System.out.println("CENTIMETERS\t: " + centimeters);
-
-
+         // final double CM_IN_KILO = 100000;
+         // final double CM_IN_METER = 100;
+         //
+         // System.out.print("Enter a number of centimeters: ");
+         // double cmRemaining = in.nextDouble();
+         //
+         // int kilometers = (int) (cmRemaining / CM_IN_KILO);
+         // cmRemaining %= CM_IN_KILO;
+         // int meters = (int) (cmRemaining / CM_IN_METER);
+         // int centimeters = (int) (cmRemaining % CM_IN_METER);
+         //
+         // System.out.println("\nKILOMETERS\t: " + kilometers);
+         // System.out.println("METERS\t\t: " + meters);
+         // System.out.println("CENTIMETERS\t: " + centimeters);
 
         /*
          * Exercise 6.
          *
          * Given a diameter, print the area and circumference of the corresponding circle.
          */
+         System.out.print("\nEnder a diameter: ");
+         double diameter = in.nextDouble();
+         double area = Math.PI * diameter * diameter * (.25) ;
+         double circumfrence = Math.PI * diameter;
+         System.out.printf("\nAREA\t\t: %.2f", area);
+         System.out.printf("\nCIRCUMFRENCE\t: %.2f", circumfrence);
 
 
 
